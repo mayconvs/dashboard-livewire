@@ -1,0 +1,84 @@
+@import "./notifications.css";
+
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+  /* === CORES DA SUA MARCA (light + dark automático) === */
+  --color-primary: oklch(63%  0.25 265);
+  /* #6366f1 */
+  --color-primary-hover: oklch(56%  0.27 265);
+  /* #4f46e5 */
+
+  /* Dark mode variants (Tailwind v4.1 entende automaticamente) */
+  --color-primary-dark: oklch(75%  0.22 265);
+  /* #818cf8 */
+  --color-primary-hover-dark: oklch(80%  0.20 265);
+  /* #a5b4fc */
+
+  /* Outras cores light */
+  --color-background: oklch(98.5% 0.01 250);
+  /* #f8fafc */
+  --color-surface: oklch(100%  0     0);
+  /* #ffffff */
+  --color-text: oklch(23%  0.04 260);
+  /* #1e293b */
+  --color-text-muted: oklch(52%  0.04 255);
+  /* #64748b */
+  --color-border: oklch(92%  0.02 250);
+  /* #e2e8f0 */
+
+  /* Dark mode cores */
+  --color-background-dark: oklch(14%  0.03 255);
+  /* #0f172a */
+  --color-surface-dark: oklch(22%  0.04 260);
+  /* #1e293b */
+  --color-text-dark: oklch(95%  0.02 250);
+  /* #f1f5f9 */
+  --color-text-muted-dark: oklch(65%  0.04 255);
+  /* #94a3b8 */
+  --color-border-dark: oklch(30%  0.04 260);
+  /* #334155 */
+
+  /* Cores comuns (success, etc.) */
+  --color-success: oklch(65%  0.20 160);
+  /* #10b981 */
+  --color-danger: oklch(65%  0.28  30);
+  /* #ef4444 */
+  --color-warning: oklch(75%  0.25  75);
+  /* #f59e0b */
+  --color-info: oklch(70%  0.20 225);
+  /* #06b6d4 */
+
+  --font-sans: 'Poppins', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+
+  /* === BREAKPOINTS EXTRAS (opcional) === */
+  --breakpoint-3xl: 1920px;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.iti {
+  /* Use o helper asset() ou URL direta se estiver usando CSS puro */
+  --iti-path-flags-1x: url("/storage/iti/flags.webp"); 
+  --iti-path-flags-2x: url("/storage/iti/flags@2x.webp");
+  --iti-path-globe-1x: url("/storage/iti/globe.webp");
+  --iti-path-globe-2x: url("/storage/iti/globe@2x.webp");
+  display: flex;
+}
+
+.dark .iti {
+    --iti-border-color: #5b5b5b;
+    --iti-dialcode-color: #999999;
+    --iti-dropdown-bg: #0d1117;
+    --iti-arrow-color: #aaaaaa;
+    --iti-hover-color: #30363d;
+    --iti-path-globe-1x: url("/storage/iti/globe_light.webp");
+    --iti-path-globe-2x: url("/storage/iti/globe_light@2x.webp");
+    display: unset;
+  }

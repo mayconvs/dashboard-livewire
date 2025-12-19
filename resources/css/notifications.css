@@ -1,0 +1,121 @@
+/*TOAST FUNDO*/
+.swal2-toast {
+    background-color: var(--gray-100) !important;
+    color: var(--gray-900);
+    border: 1px solid var(--gray-200);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    font-family: var(--font-sans);
+}
+
+/*TOAST TÍTULO*/
+.swal2-title {
+    color: var(--gray-900);
+    font-weight: 600;
+}
+
+/*TOAST MESSAGE*/
+.swal2-html-container {
+    color: var(--gray-800) !important;
+}
+
+/*TOAST PROGRESS BAR*/
+.swal2-timer-progress-bar-container {
+    background: var(--gray-900) !important;
+}
+
+
+/*DARK: TOAST FUNDO*/
+.dark .swal2-toast {
+    background-color: var(--gray-900) !important;
+    color: var(--gray-100);
+    border: 1px solid var(--gray-700);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/*DARK: TOAST TÍTULO*/
+.dark .swal2-title {
+    color: var(--gray-100);
+}
+
+/*DARK: TOAST MESSAGE*/
+.dark .swal2-html-container {
+    color: var(--gray-400) !important;
+}
+
+/*DARK: TOAST PROGRESS BAR*/
+.dark .swal2-timer-progress-bar-container {
+    background: transparent !important;
+}
+
+
+
+/*ICON FUNDO*/
+
+.swal2-success-circular-line-left {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.swal2-success-circular-line-left .swal2-icon, .swal2-success-fix, .swal2-success-circular-line-right {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/*DARK ICON FUNDO*/
+.dark .swal2-success-circular-line-left .swal2-icon, .dark .swal2-success-fix, .dark .swal2-success-circular-line-right {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.dark .swal2-success-circular-line-left {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+
+/*COR ICON*/
+.swal2-icon-success {
+    color: var(--color-success);
+    border-color: var(--color-success);
+}
+
+.swal2-icon-error {
+    color: var(--color-danger);
+    border-color: var(--color-danger);
+}
+
+.swal2-icon-warning {
+    color: var(--color-warning);
+    border-color: var(--color-warning);
+}
+
+.swal2-icon-info {
+    color: var(--color-info);
+    border-color: var(--color-info);
+}
+
+
+
+/* SUCCESS */
+.swal2-popup.swal2-icon-success .swal2-timer-progress-bar {
+    background-color: var(--color-success) !important;
+}
+
+
+/* ERROR */
+.swal2-popup.swal2-icon-error .swal2-timer-progress-bar {
+    background-color: var(--color-danger) !important;
+}
+
+/* WARNING */
+.swal2-popup.swal2-icon-warning .swal2-timer-progress-bar {
+    background-color: var(--color-warning) !important;
+}
+
+/* INFO */
+.swal2-popup.swal2-icon-info .swal2-timer-progress-bar {
+    background-color: var(--color-info) !important;
+}
+
+
+
